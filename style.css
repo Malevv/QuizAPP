@@ -1,0 +1,187 @@
+* {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.collapse {
+    background: fixed;
+}
+
+.quiz-card {
+    width: 25%;
+    height: auto;
+    padding-top: 5px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-img-top {
+    border-radius: 10px;
+    margin-top: -50px;
+}
+
+
+.maintance {
+    background-color: rgb(44, 44, 44);
+    width: 100;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blanchedalmond;
+    border: blanchedalmond 3px;
+}
+
+.card-body {
+    background: rgb(44, 44, 44);
+}
+
+.question-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+
+}
+
+.quiz-answer:hover {
+    cursor: pointer;
+    background-color: rgba(255, 235, 205, 0.5);
+}
+
+.endscreen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.endscreen img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 6px 6px 0 black;
+    width: 470px;
+    height: auto;
+    
+}
+
+h1 {
+    text-align: center;
+
+}
+
+.text-Center {
+    text-align: center;
+}
+
+.progressBar {
+    background-color: rgb(44, 44, 44);
+    /* (height of inner div) / 2 + padding */
+    padding: 3px;
+    background-color: orange;
+    width: 0;
+    /* Adjust with JavaScript */
+    height: 25px;
+    border-radius: 10px;
+}
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:900i');
+
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.cta {
+    display: flex;
+    padding: 10px 45px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    color: white;
+    background: #016b18;
+    transition: 1s;
+    box-shadow: 6px 6px 0 black;
+    transform: skewX(-15deg);
+}
+
+.cta:focus {
+    outline: none;
+}
+
+.cta:hover {
+    transition: 0.5s;
+    box-shadow: 10px 10px 0 #FBC638;
+}
+
+.cta span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 0px;
+}
+
+.cta:hover span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 45px;
+}
+
+span {
+    transform: skewX(15deg)
+}
+
+span:nth-child(2) {
+    width: 20px;
+    margin-left: 30px;
+    position: relative;
+    top: 12%;
+}
+
+/**************SVG****************/
+
+path.one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+}
+
+path.two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+}
+
+.cta:hover path.three {
+    animation: color_anim 1s infinite 0.2s;
+}
+
+.cta:hover path.one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover path.two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+}
+
+/* SVG animations */
+
+@keyframes color_anim {
+    0% {
+        fill: white;
+    }
+
+    50% {
+        fill: #FBC638;
+    }
+
+    100% {
+        fill: white;
+    }
+}
